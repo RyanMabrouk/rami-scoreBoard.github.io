@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rami Card Game Scoreboard</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+  <h1>Rami Card Game Scoreboard</h1>
+
+  <form id="playerForm">
+    <label for="playerName">Player Name:</label>
+    <input type="text" id="playerName" required>
+
+    <label for="playerScore">Score:</label>
+    <input type="number" id="playerScore" required>
+
+    <button type="submit" id="addPlayerBtn">Add Player</button>
+    <button type="button" id="newRound">New Round</button>
+
+  </form>
+
+  <table id="scoreboard">
+    <thead>
+      <tr>
+        <th>Player Name</th>
+        <th>Score</th>
+        <th>New Round</th>
+      </tr>
+    </thead>
+    <tbody id="scoreboardBody">
+      <!-- Scores will be dynamically added here -->
+    </tbody>
+  </table>
+  <button type="button" id="clear">clear</button>
+  <script src="index.js"></script>
+</body>
+</html>
