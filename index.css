@@ -66,10 +66,22 @@ body {
     color: #333333;
   }
   
-  tbody tr:last-child td {
-    border-bottom: none;
+  tbody tr td button{
+    background-color: #d9534f;
+    width: 90%;
+    display: block;
+    margin-right: 1px;
+
   }
-  
+  tbody tr:first-child td {
+    background-color: gold;
+  }
+  tbody tr:nth-child(2) td {
+    background-color: silver;
+  }
+  tbody tr:last-child td {
+    margin-bottom: 0px;
+  }
   #clear {
     display: block;
     margin: 0 auto;
